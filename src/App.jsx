@@ -5,6 +5,8 @@ import Software from './pages/Software.jsx'
 import Research from './pages/Research.jsx'
 import Video from './pages/Video.jsx'
 import AppDev from './pages/AppDev.jsx'
+import Contact from './pages/Contact.jsx'
+import Flow from './pages/Flow.jsx'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/research" element={<Research />} />
         <Route path="/video" element={<Video />} />
         <Route path="/appdev" element={<AppDev />} />
+        <Route path="/flow" element={<Flow />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   )
