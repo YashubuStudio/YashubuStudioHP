@@ -5,6 +5,7 @@ import Software from './pages/Software.jsx'
 import Research from './pages/Research.jsx'
 import Video from './pages/Video.jsx'
 import AppDev from './pages/AppDev.jsx'
+import Services from './pages/Services.jsx'
 import Contact from './pages/Contact.jsx'
 import Flow from './pages/Flow.jsx'
 
@@ -13,6 +14,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/software" element={<Software />} />
         <Route path="/research" element={<Research />} />
         <Route path="/video" element={<Video />} />
