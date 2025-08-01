@@ -25,6 +25,12 @@ export default function Header() {
         <Button color="inherit" component={Link} to="/appdev">
           アプリ開発
         </Button>
+        <Button color="inherit" component={Link} to="/flow">
+          納品までの流れ
+        </Button>
+        <Button color="inherit" component={Link} to="/contact">
+          お問い合わせ
+        </Button>
       </Toolbar>
     </AppBar>
   )
