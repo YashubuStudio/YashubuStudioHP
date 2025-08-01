@@ -8,6 +8,8 @@ import {
   CardActionArea,
 } from '@mui/material'
 import { Link } from 'react-router-dom'
+import Header from '../components/Header.jsx'
+import Footer from '../components/Footer.jsx'
 
 const services = [
   { title: 'ソフトウェア開発・Web制作', path: '/software' },
@@ -19,6 +21,7 @@ const services = [
 export default function Home() {
   return (
     <>
+      <Header />
       <Box sx={{ bgcolor: 'primary.main', color: 'primary.contrastText', py: 6, textAlign: 'center' }}>
         <Typography variant="h3" component="h1">
           YashubuStudio
@@ -45,6 +48,7 @@ export default function Home() {
           ))}
         </Grid>
       </Container>
+      <Footer />
     </>
   )
 }
