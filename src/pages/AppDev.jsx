@@ -1,4 +1,6 @@
 import { Container, Typography } from '@mui/material'
+import Header from '../components/Header.jsx'
+import Footer from '../components/Footer.jsx'
 
 const items = [
   'Webアプリからモバイルアプリまでマルチプラットフォームに対応',
@@ -8,17 +10,21 @@ const items = [
 
 export default function AppDev() {
   return (
-    <Container sx={{ py: 4 }}>
-      <Typography variant="h4" component="h1" gutterBottom>
-        アプリ開発
-      </Typography>
-      <ul>
-        {items.map((text) => (
-          <li key={text}>
-            <Typography component="span">{text}</Typography>
-          </li>
-        ))}
-      </ul>
-    </Container>
+    <>
+      <Header />
+      <Container sx={{ py: 4 }}>
+        <Typography variant="h4" component="h1" gutterBottom>
+          アプリ開発
+        </Typography>
+        <ul>
+          {items.map((text) => (
+            <li key={text}>
+              <Typography component="span">{text}</Typography>
+            </li>
+          ))}
+        </ul>
+      </Container>
+      <Footer />
+    </>
   )
 }

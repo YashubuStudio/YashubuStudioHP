@@ -1,4 +1,6 @@
 import { Container, Typography } from '@mui/material'
+import Header from '../components/Header.jsx'
+import Footer from '../components/Footer.jsx'
 
 const items = [
   '社内業務の効率化を目的とした業務支援アプリケーションの開発',
@@ -9,17 +11,21 @@ const items = [
 
 export default function Software() {
   return (
-    <Container sx={{ py: 4 }}>
-      <Typography variant="h4" component="h1" gutterBottom>
-        ソフトウェア開発・Web制作
-      </Typography>
-      <ul>
-        {items.map((text) => (
-          <li key={text}>
-            <Typography component="span">{text}</Typography>
-          </li>
-        ))}
-      </ul>
-    </Container>
+    <>
+      <Header />
+      <Container sx={{ py: 4 }}>
+        <Typography variant="h4" component="h1" gutterBottom>
+          ソフトウェア開発・Web制作
+        </Typography>
+        <ul>
+          {items.map((text) => (
+            <li key={text}>
+              <Typography component="span">{text}</Typography>
+            </li>
+          ))}
+        </ul>
+      </Container>
+      <Footer />
+    </>
   )
 }

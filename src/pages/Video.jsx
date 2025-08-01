@@ -1,4 +1,6 @@
 import { Container, Typography } from '@mui/material'
+import Header from '../components/Header.jsx'
+import Footer from '../components/Footer.jsx'
 
 const items = [
   'ライブ配信や録画収録のサポート (YouTube Live / OBS / Zoom 等)',
@@ -9,17 +11,21 @@ const items = [
 
 export default function Video() {
   return (
-    <Container sx={{ py: 4 }}>
-      <Typography variant="h4" component="h1" gutterBottom>
-        動画配信・撮影・編集
-      </Typography>
-      <ul>
-        {items.map((text) => (
-          <li key={text}>
-            <Typography component="span">{text}</Typography>
-          </li>
-        ))}
-      </ul>
-    </Container>
+    <>
+      <Header />
+      <Container sx={{ py: 4 }}>
+        <Typography variant="h4" component="h1" gutterBottom>
+          動画配信・撮影・編集
+        </Typography>
+        <ul>
+          {items.map((text) => (
+            <li key={text}>
+              <Typography component="span">{text}</Typography>
+            </li>
+          ))}
+        </ul>
+      </Container>
+      <Footer />
+    </>
   )
 }
